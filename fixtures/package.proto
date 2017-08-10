@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package foo.bar.baz;
+
+message Test {
+  string id = 1;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "protobufjs-brunch",
+  "version": "1.0.0",
+  "description": "Adds protobuf support to Brunch.",
+  "author": "Joey Pereira (http://pereira.io/)",
+  "homepage": "https://github.com/lego/protobuf-brunch",
+  "license": "MIT",
+  "keywords": [
+    "brunch",
+    "brunch-plugin",
+    "brunch-compiler",
+    "protobuf",
+    "protobufjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lego/protobufjs-brunch.git"
+  },
+  "scripts": {
+    "test": "eslint index.js && mocha"
+  },
+  "dependencies": {
+    "anymatch": "~1.3.2",
+    "micro-promisify": "~0.1.1",
+    "progeny": "lego/progeny",
+    "protobufjs": "~6.8.0"
+  },
+  "devDependencies": {
+    "chai": "~4.1.0",
+    "eslint": "~4.3.0",
+    "eslint-config-brunch": "zazaian/eslint-config-brunch",
+    "mocha": "~3.5.0"
+  },
+  "eslintConfig": {
+    "extends": "brunch"
+  }
+}

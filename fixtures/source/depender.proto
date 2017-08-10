@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "dependancy.proto";
+
+message Depender {
+  Dependancy dep = 0;
+}
