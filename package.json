@@ -22,7 +22,7 @@
   "dependencies": {
     "anymatch": "~1.3.2",
     "micro-promisify": "~0.1.1",
-    "progeny": "lego/progeny",
+    "progeny": "lego/progeny#0.11.1-proto-support",
     "protobufjs": "~6.8.0"
   },
   "devDependencies": {
