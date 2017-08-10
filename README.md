@@ -1,4 +1,9 @@
 ## protobufjs-brunch
+
+[![npm version](https://badge.fury.io/js/protobufjs-brunch.svg)](https://badge.fury.io/js/protobufjs-brunch)
+[![Build Status](https://travis-ci.org/lego/protobufjs-brunch.svg?branch=master)](https://travis-ci.org/lego/protobufjs-brunch)
+
+
 Adds `.proto` compilation support to
 [brunch](http://brunch.io) using [protobuf.js](https://github.com/dcodeIO/ProtoBuf.js/).
 
