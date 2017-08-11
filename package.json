@@ -1,6 +1,6 @@
 {
   "name": "protobufjs-brunch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Adds protobuf support to Brunch.",
   "author": "Joey Pereira (http://pereira.io/)",
   "homepage": "https://github.com/lego/protobuf-brunch",
