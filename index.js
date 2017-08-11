@@ -55,6 +55,8 @@ class ProtoBufJSCompiler {
 
 ProtoBufJSCompiler.prototype.brunchPlugin = true;
 ProtoBufJSCompiler.prototype.type = 'javascript';
-ProtoBufJSCompiler.prototype.pattern = /\.proto/;
+ProtoBufJSCompiler.prototype.extension = 'proto';
+ProtoBufJSCompiler.prototype.targetExtension = 'js';
+
 
 module.exports = ProtoBufJSCompiler;

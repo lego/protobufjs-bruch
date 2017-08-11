@@ -7,6 +7,9 @@
 Adds `.proto` compilation support to
 [brunch](http://brunch.io) using [protobuf.js](https://github.com/dcodeIO/ProtoBuf.js/).
 
+## Warning
+To use this package, you are required to have `babel-brunch` to process the ES6 output. For this to work, we also recommend that you put the `protobufjs-brunch` dependency above `babel-brunch` (yes, brunch uses order for compilation dependency).
+
 ## Usage
 Install the plugin via npm with `npm install --save-dev protobufjs-brunch`.
 
