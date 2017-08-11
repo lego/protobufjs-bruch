@@ -21,6 +21,8 @@ class ProtoBufJSCompiler {
 
   get getDependencies() {
     return progeny({
+      extension: 'proto',
+      regexp: /^\s*import\s+(?:public\s+)?"(.+)";/,
       reverseArgs: true,
     });
   }
