@@ -37,8 +37,8 @@ describe('protobufjs-brunch', () => {
     };
     file.data = fs.readFileSync(file.path, "utf8");
     return plugin.compile(file).then(file => {
-      expect(file.data).to.contain("import * as $protobuf from \"protobufjs/minimal\";");
-      expect(file.data).to.contain("function Test(properties)");
+      expect(file.data).to.contain("require(\"protobufjs/light\");");
+      expect(file.data).to.contain("Test:");
     });
   });
 
@@ -48,8 +48,8 @@ describe('protobufjs-brunch', () => {
     };
     file.data = fs.readFileSync(file.path, "utf8");
     return plugin.compile(file).then(file => {
-      expect(file.data).to.contain("import * as $protobuf from \"protobufjs/minimal\";");
-      expect(file.data).to.contain("function Outer(properties)");
+      expect(file.data).to.contain("require(\"protobufjs/light\");");
+      expect(file.data).to.contain("Outer:");
     });
   });
 
@@ -59,8 +59,8 @@ describe('protobufjs-brunch', () => {
     };
     file.data = fs.readFileSync(file.path, "utf8");
     return plugin.compile(file).then(file => {
-      expect(file.data).to.contain("import * as $protobuf from \"protobufjs/minimal\";");
-      expect(file.data).to.contain("function Test(properties)");
+      expect(file.data).to.contain("require(\"protobufjs/light\");");
+      expect(file.data).to.contain("Test:");
     });
   });
 
@@ -70,8 +70,8 @@ describe('protobufjs-brunch', () => {
     };
     file.data = fs.readFileSync(file.path, "utf8");
     return plugin.compile(file).then(file => {
-      expect(file.data).to.contain("import * as $protobuf from \"protobufjs/minimal\";");
-      expect(file.data).to.contain("function Depender(properties)");
+      expect(file.data).to.contain("require(\"protobufjs/light\");");
+      expect(file.data).to.contain("Depender:");
     });
   });
 });

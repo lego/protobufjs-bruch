@@ -24,7 +24,7 @@
     "babel-brunch": "^6.1.1",
     "micro-promisify": "~0.1.1",
     "progeny": "~0.11.0",
-    "protobufjs": "~6.8.0"
+    "protobufjs": "dcodeIO/protobuf.js#952c7d1b478cc7c6de82475a17a1387992e8651f"
   },
   "devDependencies": {
     "chai": "~4.1.0",

@@ -28,28 +28,26 @@ class ProtoBufJSCompiler {
   }
 
   compile(file) {
-    let compiled;
-    let args = ['--target', 'static-module', '--wrap', 'es6', '--es6', file.path];
+    let args = ['--target', 'json-module', '--wrap', 'commonjs', file.path];
     if (this.includePath) {
       args = args.concat(['-p', this.includePath]);
     }
-    try {
-      pbjs.main(args, (err, output) => {
-        if (err) {
-          throw err;
-        }
-        // do something with output
-        compiled = output;
-      });
-    } catch (err) {
-      return Promise.reject(formatError(err));
-    }
 
-    const result = {
-      data: compiled,
-    };
-
-    return Promise.resolve(result);
+    return new Promise((resolve, reject) => {
+      try {
+        pbjs.main(args, (err, output) => {
+          if (err) {
+            throw err;
+          }
+          const result = {
+            data: output,
+          };
+          return resolve(result);
+        });
+      } catch (err) {
+        return reject(formatError(err));
+      }
+    });
   }
 }
 
